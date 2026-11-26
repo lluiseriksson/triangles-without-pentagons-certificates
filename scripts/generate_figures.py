@@ -56,18 +56,24 @@ def fig1_table1_sos_profiles() -> None:
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(9.4, 3.55))
 
     ax1.plot(d_vals, c_1324, color="#1b5e9c", lw=2.0, label=r"$E\in\{13,24\}$: $2(1+d/8)^2$")
-    ax1.plot(d_vals, c_sing, color="#d95f02", lw=2.0, label=r"Singletons: $(1-\frac{d}{8})(1-\frac{9d}{8})$")
-    ax1.plot(d_vals, c_1234, color="#1b9e77", lw=2.0, label=r"$E\in\{12,34\}$: $\frac{1}{2}-d+\frac{d^2}{8}$")
+    ax1.plot(d_vals, c_sing, color="#d95f02", lw=2.0, label=r"Singletons: $(1-d/8)(1-9d/8)$")
+    ax1.plot(d_vals, c_1234, color="#1b9e77", lw=2.0, label=r"$E\in\{12,34\}$: $1/2 - d + d^2/8$")
     ax1.plot(d_vals, c_triples, color="#7570b3", lw=2.0, label=r"Triples: $d^2/32$")
     ax1.axhline(0.0, color="#444444", lw=0.8, ls="--")
     for res, lbl in [(r07, "C07"), (r06, "C06"), (r08, "C08"), (r05, "C05")]:
         dv = _rat_to_float(res["param_d"])
         ax1.axvline(dv, color="#888888", lw=0.75, ls=":")
+    # Annotate exact rational endpoint values at d = 1/2 so curves are unambiguously verifiable visually
+    ax1.scatter([0.5, 0.5, 0.5, 0.5], [c_1324[-1], c_sing[-1], c_1234[-1], c_triples[-1]],
+                color=["#1b5e9c", "#d95f02", "#1b9e77", "#7570b3"], s=24, zorder=5)
+    ax1.annotate("289/128 (2.26)", xy=(0.5, c_1324[-1]), xytext=(0.34, 2.33), fontsize=7.2, color="#1b5e9c")
+    ax1.annotate("105/256 (0.41)", xy=(0.5, c_sing[-1]), xytext=(0.355, 0.66), fontsize=7.2, color="#d95f02")
+    ax1.annotate("1/32 (0.031)", xy=(0.5, c_1234[-1]), xytext=(0.355, 0.23), fontsize=7.2, color="#1b9e77")
     ax1.set_title("(a) Table 1 Orbit-Class Sum Nonnegativity on $d \\in [0, 1/2]$")
     ax1.set_xlabel(r"Imbalance parameter $d = 2 - 3p$")
     ax1.set_ylabel(r"Exact orbit sum $\sum (j_E - b_E)$")
-    ax1.set_xlim(0.0, 0.505)
-    ax1.set_ylim(-0.08, 2.48)
+    ax1.set_xlim(0.0, 0.525)
+    ax1.set_ylim(-0.08, 2.55)
     ax1.legend(loc="center left", bbox_to_anchor=(0.01, 0.59), frameon=True, framealpha=0.96)
     ax1.grid(alpha=0.25)
 
@@ -200,7 +206,7 @@ def fig3_bollobas_gyori_and_berge() -> None:
     x = list(range(len(cats)))
     w = 0.34
     b1 = ax2.bar([i - w / 2 for i in x], verts, width=w, color="#4292c6", label="Vertices $n$")
-    b2 = ax2.bar([i + w / 2 for i in x], structs, width=w, color="#fd8d3c", label="Book $\\Delta$ / $\\tau(G)$ / $|E(\\mathcal{H})|$")
+    b2 = ax2.bar([i + w / 2 for i in x], structs, width=w, color="#fd8d3c", label=r"$\tau_{\mathrm{book}}$ / $\tau(G)$ / $|E(\mathcal{H})|$")
     for bars in (b1, b2):
         for bar in bars:
             h = int(bar.get_height())
