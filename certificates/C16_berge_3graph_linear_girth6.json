@@ -1,0 +1,72 @@
+{
+  "schema_version": "EX-K3-C5-CERT-1.0",
+  "certificate_id": "C16_berge_3graph_linear_girth6",
+  "paper_reference": "Cui-Gyori-Zhang-Zhu (arXiv:2611.33685v1), Thm. 1.4 Linear Girth-6 3-Graph Shadow Reduction",
+  "mode": "bollobas_gyori_and_applications",
+  "payload": {
+    "submode": "berge_3graph_shadow_reduction",
+    "num_vertices": 24,
+    "hyperedges": [
+      [
+        0,
+        1,
+        6
+      ],
+      [
+        1,
+        2,
+        7
+      ],
+      [
+        2,
+        3,
+        8
+      ],
+      [
+        3,
+        4,
+        9
+      ],
+      [
+        4,
+        5,
+        10
+      ],
+      [
+        5,
+        0,
+        11
+      ],
+      [
+        0,
+        12,
+        13
+      ],
+      [
+        1,
+        14,
+        15
+      ],
+      [
+        2,
+        16,
+        17
+      ],
+      [
+        3,
+        18,
+        19
+      ],
+      [
+        4,
+        20,
+        21
+      ],
+      [
+        5,
+        22,
+        23
+      ]
+    ]
+  }
+}

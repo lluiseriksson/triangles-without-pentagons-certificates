@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software or verification corpus, please cite it as below."
+title: "EX-K3-C5-CERT-1.0: Constructive Capacity, Sum-of-Squares, and Shadow-Reduction Certificates for Triangles Without Pentagons"
+authors:
+  - family-names: "Eriksson"
+    given-names: "Lluis"
+    email: "lluis@airr.science"
+version: "1.0.0"
+date-released: "2026-11-26"
+license: "MIT"
+repository-code: "https://github.com/lluiseriksson/triangles-without-pentagons-certificates"

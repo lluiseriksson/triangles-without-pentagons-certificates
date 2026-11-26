@@ -1,0 +1,51 @@
+{
+  "schema_version": "EX-K3-C5-CERT-1.0",
+  "certificate_id": "C12_rho_boundary_refinement",
+  "paper_reference": "Cui-Gyori-Zhang-Zhu (arXiv:2611.33685v1), Sec. 5 Boundary Refinement near rho=0 and 1/9",
+  "mode": "five_walk_free_and_density",
+  "payload": {
+    "submode": "rho_monotonicity_contradiction",
+    "rho_values": [
+      [
+        1,
+        1000
+      ],
+      [
+        1,
+        500
+      ],
+      [
+        1,
+        200
+      ],
+      [
+        1,
+        128
+      ],
+      [
+        1,
+        64
+      ],
+      [
+        1,
+        32
+      ],
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        10,
+        99
+      ],
+      [
+        1,
+        9
+      ]
+    ]
+  }
+}

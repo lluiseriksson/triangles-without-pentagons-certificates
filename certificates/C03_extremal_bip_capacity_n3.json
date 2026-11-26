@@ -1,0 +1,54 @@
+{
+  "schema_version": "EX-K3-C5-CERT-1.0",
+  "certificate_id": "C03_extremal_bip_capacity_n3",
+  "paper_reference": "Cui-Gyori-Zhang-Zhu (arXiv:2611.33685v1), Sec. 2 Lemma 2.5 Eq. (1)",
+  "mode": "book_reduction_and_capacity",
+  "payload": {
+    "submode": "capacity_l2_and_row_bounds",
+    "num_vertices": 3,
+    "weight_matrix_k": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          71,
+          41
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          71,
+          41
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ]
+  }
+}

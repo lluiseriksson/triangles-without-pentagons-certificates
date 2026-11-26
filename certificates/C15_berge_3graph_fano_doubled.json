@@ -1,0 +1,117 @@
+{
+  "schema_version": "EX-K3-C5-CERT-1.0",
+  "certificate_id": "C15_berge_3graph_fano_doubled",
+  "paper_reference": "Cui-Gyori-Zhang-Zhu (arXiv:2611.33685v1), Thm. 1.4 {BC_3,BC_4,BC_5}-Free Extremal 3-Graph",
+  "mode": "bollobas_gyori_and_applications",
+  "payload": {
+    "submode": "berge_3graph_shadow_reduction",
+    "num_vertices": 21,
+    "hyperedges": [
+      [
+        0,
+        7,
+        15
+      ],
+      [
+        0,
+        7,
+        17
+      ],
+      [
+        0,
+        7,
+        19
+      ],
+      [
+        1,
+        8,
+        14
+      ],
+      [
+        1,
+        8,
+        17
+      ],
+      [
+        1,
+        8,
+        18
+      ],
+      [
+        2,
+        9,
+        16
+      ],
+      [
+        2,
+        9,
+        17
+      ],
+      [
+        2,
+        9,
+        20
+      ],
+      [
+        3,
+        10,
+        14
+      ],
+      [
+        3,
+        10,
+        15
+      ],
+      [
+        3,
+        10,
+        16
+      ],
+      [
+        4,
+        11,
+        15
+      ],
+      [
+        4,
+        11,
+        18
+      ],
+      [
+        4,
+        11,
+        20
+      ],
+      [
+        5,
+        12,
+        14
+      ],
+      [
+        5,
+        12,
+        19
+      ],
+      [
+        5,
+        12,
+        20
+      ],
+      [
+        6,
+        13,
+        16
+      ],
+      [
+        6,
+        13,
+        18
+      ],
+      [
+        6,
+        13,
+        19
+      ]
+    ]
+  }
+}

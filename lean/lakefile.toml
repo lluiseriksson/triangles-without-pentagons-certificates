@@ -1,0 +1,7 @@
+name = "TrianglesNoPentagonsCert"
+version = "0.1.0"
+defaultTargets = ["TrianglesNoPentagonsCert"]
+
+[[lean_lib]]
+name = "TrianglesNoPentagonsCert"
+moreLeanArgs = ["-j", "1"]

@@ -1,0 +1,104 @@
+{
+  "schema_version": "EX-K3-C5-CERT-1.0",
+  "certificate_id": "C02_doubled_tree_k4_n14",
+  "paper_reference": "Cui-Gyori-Zhang-Zhu (arXiv:2611.33685v1), Sec. 2 Prop. 2.6 & Lemma 2.8",
+  "mode": "book_reduction_and_capacity",
+  "payload": {
+    "submode": "book_block_orientation_and_cap",
+    "num_vertices": 14,
+    "edges": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        0,
+        13
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        11,
+        12
+      ]
+    ]
+  }
+}
